@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="BF1.fs" />
+        <Compile Include="BF2.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="paket-files\nanodesu88\fsharplu\FSharpLu\FSharpLu.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="programs\99bottles.bf" />
+      <Content Include="programs\hw.bf" />
+      <Content Include="programs\hw2.bf" />
+      <Content Include="programs\pi.bf">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="programs\pi.min.bf" />
+      <Content Include="programs\random.bf" />
+      <Content Include="programs\yapi.bf" />
+    </ItemGroup>
+
+</Project>
